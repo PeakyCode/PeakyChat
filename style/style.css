@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+
+}
+
+body {
+    /* background: linear-gradient(135deg, #044f48, #2a7561); */
+    background-color: #2a7561;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute; */
+}
+
+
+#wrapper {
+    margin-top: 3%;
+    width: 50vw;
+    max-width: 900px;
+    height: 80vh;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.46);
+    overflow: hidden;
+    /* background-color: red; */
+    /* opacity: 0.1; */
+}
+
+#chatHeader {
+    color: white;
+    width: 100%;
+    height: 10%;
+    min-height: 6vh;
+    background-color: black;
+    background: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chatHeader p {
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 50px;
+    width: 70%;
+}
+
+
+.button {
+    display: inline-block;
+    margin-right: 10%;
+    height: 40px;
+    width: 100px;
+    background-color: lightgreen;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: 0.5s;
+    position: relative;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 5px 1px rgba(255, 255, 255);
+}
+
+a:hover {
+    cursor: default;
+}
+
+.button button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    background-color: lightgreen;
+    border: none;
+    letter-spacing: 1.5px;
+}
+
+#messageBox {
+    width: 100%;
+    height: 80%;
+    background: rgb(0, 0, 0, 0.2);
+    overflow: auto;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.msg {
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    min-height: 10%;
+    max-height: 15%;
+    background: rgb(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px rgba(255, 255, 255);
+}
+
+.nickname {
+    padding: 2px 5px;
+    display: block;
+    border-bottom: 2px solid black;
+}
+
+.content {
+    padding: 5px 5px;
+}
+
+.msg p {
+    font-size: 20px;
+}
+
+#messageForm {
+    width: 100%;
+    height: 10%;
+    background: rgb(0, 0, 0, 0.5);
+
+}
+
+#messageForm form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#message {
+    color: black;
+    background-color: transparent;
+    display: inline-block;
+    border: none;
+    height: 40px;
+    width: 60%;
+    margin-left: 5%;
+    font-size: 20px;
+    outline: none;
+    transition: 0.2s;
+    padding-left: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+#message:hover {
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#message:focus {
+    border: 2px solid black;
+    border-radius: 20px;
+    outline: 2px;
+    color: white;
+}
+
+#login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 100px;
+    background-color: blue;
+    transform: translate(-50%, -50%);
+    background: rgb(0, 0, 0, 0.5);
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+#login:hover {
+    box-shadow: 0px 0px 5px 1px rgba(255, 255, 255);
+}
+
+#login form {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#nick {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding-left: 20px;
+
+
+}
+
+.submit {
+    background-color: lightgreen;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(100%, -50%);
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+}
